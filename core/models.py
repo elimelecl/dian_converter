@@ -71,7 +71,7 @@ class LineaSalida(models.Model):
     base_extra = models.FloatField(null = True, blank = True)
     mes_corriente = models.CharField(
         max_length=50,
-        choises = (
+        choices = (
             ('SI', 'SI'),
             ('NO', 'NO'),
         )
