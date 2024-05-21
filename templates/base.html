@@ -21,6 +21,7 @@
 
     <!-- Custom Theme Style -->
     <link href="{% static '/assets/css/custom.min.css' %}" rel="stylesheet">
+    <link href="{% static '/assets/css/custom.min.css' %}" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -59,7 +60,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="javascript:void(0)"><i class="fa fa-industry"></i> Clientes </a>
+                    <a href="/vistaclientes"><i class="fa fa-industry"></i> Clientes </a>
                   </li>
                   <li>
                     <a href="javascript:void(0)"><i class="fa fa-users"></i> Usuarios </a>
@@ -72,7 +73,8 @@
         </div>
         
         {% block content%}
-        {% end block%}
+        {% endblock %}
+        <div class="modales"></div>
         <!-- footer content -->
         <footer>
           <div class="pull-right">
@@ -93,5 +95,7 @@
 
     <!-- Custom Theme Scripts -->
     <script src="{% static '/assets/js/custom.min.js' %}"></script>
+    <script src="{% static '/assets/js/main.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
   </body>
 </html>
